@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check Report Status — PrimeLab Diagnostics Lahore</title>
+<meta name="description" content="Track your PrimeLab sample with your PL booking reference: booked, collected, testing, or report ready — and get it on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header"><div class="container nav-in">
+<a href="index.html" class="logo">Prime<em>Lab</em><small>DIAGNOSTICS &middot; LAHORE</small></a>
+<nav class="nav" id="nav"><a href="index.html" class="">Home</a><a href="tests.html" class="">Tests</a><a href="reports.html" class="active">Reports</a><a href="packages.html" class="">Packages</a><a href="about.html" class="">About</a><a href="contact.html" class="">Contact</a><a href="home-collection.html" class="btn">Book Home Collection</a></nav>
+<button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+</div></header>
+<section class="page-hero"><div class="container"><h1>Report Status &amp; Delivery</h1><p>Enter the PL reference from your booking to see where your sample is right now.</p></div></section>
+
+<section class="sec"><div class="container">
+<div class="lookup reveal">
+<label for="repRef"><b>Booking reference</b></label>
+<input id="repRef" placeholder="e.g. PL-482913" autocomplete="off">
+<button class="btn btn-sap" id="repBtn">Check Status</button>
+<p class="err" id="repErr"></p>
+<div id="repResult"></div>
+</div>
+<div class="steps" style="margin-top:2.5rem">
+<div class="step reveal"><b>01</b><h3>Booked</h3><p>Your booking is confirmed and a phlebotomist is assigned.</p></div>
+<div class="step reveal" style="--d:.1s"><b>02</b><h3>Sample collected</h3><p>Your sample is sealed, labelled and on its way to the lab.</p></div>
+<div class="step reveal" style="--d:.2s"><b>03</b><h3>Testing &amp; ready</h3><p>Analysis runs, a pathologist reviews it, and the report is sent to your WhatsApp.</p></div>
+</div></div></section>
+<section class="sec" style="padding-top:0"><div class="container two">
+<div class="reveal"><img class="sample-img" style="height:auto" src="images/reports.jpg" alt="Doctor reviewing a laboratory report on a computer"></div>
+<div class="reveal"><span class="pill">INSIDE YOUR REPORT</span><h2>What a PrimeLab report shows</h2>
+<ul class="tick"><li>Your result next to the healthy reference range — out-of-range values are flagged clearly</li><li>The sample type, collection time and report time, so your doctor has full context</li><li>A short plain-language note on what the test measures</li><li>A QR-verifiable report ID your doctor or employer can check</li></ul>
+<a href="tests.html" class="btn btn-outline">Browse Tests &rarr;</a></div>
+</div></section>
+
+<footer class="footer"><div class="container"><div class="foot-in">
+<div><h4>PrimeLab Diagnostics Centre</h4><p>Accurate lab testing in Lahore — walk in, or book a home sample collection and get your report on WhatsApp.</p></div>
+<div><h4>Explore</h4><a href="tests.html">All Tests</a><a href="packages.html">Health Packages</a><a href="reports.html">Check Report Status</a><a href="home-collection.html">Home Collection</a></div>
+<div><h4>Popular Tests</h4><a href="tests.html">CBC — Rs. 800</a><a href="tests.html">HbA1c — Rs. 1,800</a><a href="tests.html">Vitamin D — Rs. 3,500</a><a href="tests.html">Lipid Profile — Rs. 1,700</a></div>
+<div><h4>Contact</h4><a href="contact.html">14-B Main Boulevard, Gulberg III, Lahore</a><a href="tel:+923001234567">+92 300 1234567</a><a href="contact.html">Open 7 days &middot; 7 AM – 11 PM</a></div>
+</div><div class="foot-bottom">© 2026 PrimeLab Diagnostics Centre, Lahore. Demo website — Website #07 of the 100 Websites Challenge.</div></div></footer>
+<a class="wa-float" href="https://wa.me/923001234567?text=Assalam-o-Alaikum!%20I%20have%20a%20question%20for%20PrimeLab%20Diagnostics." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">&#128172;</a>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/lab.js"></script>
+</body>
+</html>
